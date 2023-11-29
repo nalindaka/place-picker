@@ -68,7 +68,7 @@ function App() {
     if (storedIds.indexOf(id) === -1) {
       localStorage.setItem(
         "selectedPlaces",
-        JSON.stringify(storedIds.filter((id) => id !== selectedPlace.id))
+        JSON.stringify(storedIds.filter((id) => id !== selectedPlace.current))
       );
     }
   }
